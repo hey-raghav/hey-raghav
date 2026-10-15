@@ -1,11 +1,11 @@
 <div align="center">
   <picture>
     <source
-      media="(prefers-color-scheme: light)"
+      media="(prefers-color-scheme: dark)"
       srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg"
     />
     <source
-      media="(prefers-color-scheme: dark)"
+      media="(prefers-color-scheme: light)"
       srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
     />
     <img
@@ -16,7 +16,7 @@
 </div>
 
 <h1 align="left">Hi 👋, I'm Raghav!</h1>
-<h3 align="left">Cybersecurity Student | VAPT & Web Application Pentester | Bug Hunter</h3>
+<h3 align="left">Cybersecurity Student | VAPT & Web Application Pentester | Bug Hunter | CVE Researcher</h3>
 
 <img align="right" alt="Hacking" width="400" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
 
@@ -24,40 +24,78 @@
   <img src="https://komarev.com/ghpvc/?username=hey-raghav&label=Profile%20views&color=0e75b6&style=flat" alt="raghav" />
 </p>
 
-- 🔭 I'm currently working on **Web Application Pentesting & PortSwigger Labs**
-- 🌱 I'm currently learning **JWT Attacks, HTTP Request Smuggling, OAuth & SSTI**
-- 🎯 Goal: **Pentesting Internship / Junior Pentester / Bug Bounty by June 2026**
-- 🏆 Certified: **CRTA | CNSP | CSEDP**
+- 🔭 Currently building **AI-assisted pentesting tools** ([WAPT_AI](https://github.com/hey-raghav/WAPT_AI), [ReconMind](https://github.com/hey-raghav/ReconMind)) and sharpening web app pentesting with **PortSwigger Labs**
+- 🐛 Active **bug bounty contributor** with **3 published CVEs** in SiYuan Desktop
+- 🌱 Learning **JWT Attacks, HTTP Request Smuggling, OAuth & SSTI**
+- 🎯 Looking for: **Pentesting Internship / Junior Pentester / Security Analyst roles**
+- 🏆 Certified: **CRTA | CNSP | Microsoft Security Operations Analyst Associate**
 - 🌐 Portfolio & Writeups: **[heyraghav.in](https://heyraghav.in)**
-- 💬 Ask me about **VAPT, Web App Security, Burp Suite, Active Directory**
+- 💬 Ask me about **VAPT, Web App Security, Burp Suite, CVE Research, Active Directory**
 - ⚡ Fun fact: **I break things to understand how they're built**
 
 ---
 
 ### 🏅 Certifications
 
-| CRTA | CNSP | CSEDP |
-|------|------|-------|
-| Certified Red Team Analyst | Certified Network Security Practitioner | Certified Social Engineering Defense Practitioner |
+| CRTA | CNSP | Microsoft SC-200 |
+|------|------|------------------|
+| Certified Red Team Analyst (CyberWarFare Labs) | Certified Network Security Practitioner (The SecOps Group) | Microsoft Certified: Security Operations Analyst Associate |
+
+---
+
+### 💼 Experience
+
+**Cybersecurity Intern — ENCODERSPRO Private Limited (Remote)** · Jun 2025 – Jul 2025
+- Performed VAPT against staging environments, identifying OWASP Top 10 vulnerabilities with CVSS-based risk ratings and delivering prioritised remediation reports
+- Ran black-box network penetration tests (Nmap, Metasploit) to enumerate services and validate firewall rules; conducted OSINT across 10+ targets
+
+---
+
+### 🚀 Projects
+
+#### [WAPT_AI](https://github.com/hey-raghav/WAPT_AI) — AI-Powered Web Application Penetration Testing Framework
+- Built **Sentinel**, a live traffic-interception dashboard (Burp Suite + mitmproxy) that analyzes every request/response using Claude to surface HIGH/CRITICAL findings
+- LLM-driven vulnerability detection across 23+ vuln classes (SQLi, XSS, SSTI, JWT) using Claude/Gemini/Ollama for payload generation; multi-threaded across 50+ endpoints/session
+
+#### [ReconMind](https://github.com/hey-raghav/ReconMind) — Autonomous Recon Engine
+- 5-phase pipeline: subdomain enum → live host probing → crawling → Nuclei sweeps → screenshots, cutting manual recon time by ~70%
+- Integrates the Claude API to automate threat prioritisation and generate security finding reports
+
+---
+
+### 🔐 CVE / Security Disclosures — SiYuan Desktop
+
+| CVE | Advisory | Summary |
+|-----|----------|---------|
+| [CVE-2026-75916](https://nvd.nist.gov/vuln/detail/CVE-2026-75916) | [GHSA-5prr-vgxq-69g9](https://github.com/siyuan-note/siyuan/security/advisories/GHSA-5prr-vgxq-69g9) | Stored XSS → RCE (CVSS 8.4) via unescaped block metadata in the block-reference hint popup |
+| [CVE-2026-75917](https://nvd.nist.gov/vuln/detail/CVE-2026-75917) | [GHSA-jjq3-3942-x99r](https://github.com/siyuan-note/siyuan/security/advisories/GHSA-jjq3-3942-x99r) | Stored XSS → RCE (CVSS 8.4) via unescaped block metadata in the file-tree tooltip, chained with Electron's `nodeIntegration` |
+| [CVE-2026-82653](https://nvd.nist.gov/vuln/detail/CVE-2026-82653) | [GHSA-hvwp-43j9-4xgf](https://github.com/siyuan-note/siyuan/security/advisories/GHSA-hvwp-43j9-4xgf) | Stored HTML/script injection (CVSS 8.9) via unescaped bazaar package names rendered in `confirmDialog()` into `innerHTML` |
 
 ---
 
 ### 🛠️ Security Tools & Stack
 
 #### Pentesting & Recon
-| Burp Suite | Nmap | Metasploit | SQLMap |
-|-----------|------|------------|--------|
-| <img src="https://www.svgrepo.com/show/454430/burpsuite-security-software.svg" title="Burp Suite" width="55" height="55"/> | <img src="https://nmap.org/images/nmap-logo-256x256.png" title="Nmap" width="55" height="55"/> | <img src="https://www.kali.org/tools/metasploit-framework/images/metasploit-framework-logo.svg" title="Metasploit" width="55" height="55"/> | <img src="https://tryhackme-images.s3.amazonaws.com/room-icons/523723e4d3b75b6439b8e2cd0fa6880b.png" title="SQLMap" width="55" height="55"/> |
+| Burp Suite | Nmap | Metasploit | Nuclei | Wireshark | Searchsploit |
+|-----------|------|------------|--------|-----------|--------------|
+| <img src="https://www.svgrepo.com/show/454430/burpsuite-security-software.svg" title="Burp Suite" width="55" height="55"/> | <img src="https://nmap.org/images/nmap-logo-256x256.png" title="Nmap" width="55" height="55"/> | <img src="https://www.kali.org/tools/metasploit-framework/images/metasploit-framework-logo.svg" title="Metasploit" width="55" height="55"/> | Nuclei | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wireshark_icon.svg/250px-Wireshark_icon.svg.png" title="Wireshark" width="55" height="55"/> | Searchsploit |
 
 #### Languages & Scripting
-| Python | Bash | PHP | JavaScript | HTML/CSS |
-|--------|------|-----|-----------|----------|
-| <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" title="Python" width="55" height="55"/> | <img src="https://github.com/devicons/devicon/blob/master/icons/bash/bash-original.svg" title="Bash" width="55" height="55"/> | <img src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg" title="PHP" width="55" height="55"/> | <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JS" width="55" height="55"/> | <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML" width="55" height="55"/> |
+| Python | Bash | PowerShell | JavaScript | HTML/CSS |
+|--------|------|------------|-----------|----------|
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" width="55" height="55"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" title="Bash" width="55" height="55"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg" title="PowerShell" width="55" height="55"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JS" width="55" height="55"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" width="55" height="55"/> |
 
-#### Environment & Platforms
-| Linux | Git | Docker | VirtualBox | Wireshark |
-|-------|-----|--------|-----------|-----------|
-| <img src="https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg" title="Linux" width="55" height="55"/> | <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="Git" width="55" height="55"/> | <img src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg" title="Docker" width="55" height="55"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png?_=20150209215936" title="VirtualBox" width="55" height="55"/> | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wireshark_icon.svg/250px-Wireshark_icon.svg.png" title="Wireshark" width="55" height="55"/> |
+#### OS, Cloud & Platforms
+| Kali Linux | Ubuntu | Windows 11 | AWS | Git |
+|------------|--------|------------|-----|-----|
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" title="Kali Linux" width="55" height="55"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" title="Ubuntu" width="55" height="55"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows11/windows11-original.svg" title="Windows 11" width="55" height="55"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" title="AWS" width="55" height="55"/> | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" width="55" height="55"/> |
+
+#### Focus Skills
+- **Networking:** TCP/IP, HTTP/HTTPS, DNS, SSH, FTP, JWT
+- **Security Monitoring:** Log Analysis, Splunk, Risk & Compliance Assessment, Incident Response
+- **AI/ML Security:** LLM integration, AI-driven threat detection, prompt-based payload generation
+- **Offensive:** VAPT, Network Pentesting, OSINT, CVE Research, Risk Rating
+- **Frameworks:** OWASP Top 10, MITRE ATT&CK
 
 ---
 
