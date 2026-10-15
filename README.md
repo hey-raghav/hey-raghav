@@ -76,9 +76,16 @@
 ### 🛠️ Security Tools & Stack
 
 #### Pentesting & Recon
-| Burp Suite | Nmap | Metasploit | Nuclei | Wireshark | Searchsploit |
-|-----------|------|------------|--------|-----------|--------------|
-| <img src="https://www.svgrepo.com/show/454430/burpsuite-security-software.svg" title="Burp Suite" width="55" height="55"/> | <img src="https://nmap.org/images/nmap-logo-256x256.png" title="Nmap" width="55" height="55"/> | <img src="https://www.kali.org/tools/metasploit-framework/images/metasploit-framework-logo.svg" title="Metasploit" width="55" height="55"/> | Nuclei | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wireshark_icon.svg/250px-Wireshark_icon.svg.png" title="Wireshark" width="55" height="55"/> | Searchsploit |
+<p align="left">
+  <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Nmap-004E8C?style=for-the-badge&logo=nmap&logoColor=white" alt="Nmap" />
+  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" alt="Metasploit" />
+  <img src="https://img.shields.io/badge/Nuclei-5C2D91?style=for-the-badge" alt="Nuclei" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/mitmproxy-E5000F?style=for-the-badge" alt="mitmproxy" />
+  <img src="https://img.shields.io/badge/Searchsploit-D32F2F?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Searchsploit" />
+  <img src="https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk&logoColor=white" alt="Splunk" />
+</p>
 
 #### Languages & Scripting
 | Python | Bash | PowerShell | JavaScript | HTML/CSS |
